@@ -20,10 +20,15 @@ class AlarmsViewController: UICollectionViewController {
     navigationController?.navigationBar.prefersLargeTitles = true
     
     navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(createNewAlarm))
+    
+    navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editAlarms))
   }
   
   @objc func createNewAlarm() {
     print("BEEP")
+  }
+  @objc func editAlarms() {
+    print("BOOP")
   }
   
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

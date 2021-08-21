@@ -9,5 +9,6 @@ import Foundation
 
 struct WorldClock {
   let locationName: String
-  let timeZone: TimeZones
+  let timeZone    : TimeZones
+  let currentTime : Double
 }

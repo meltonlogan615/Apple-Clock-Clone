@@ -1,13 +1,13 @@
 //
-//  AlarmsViewController.swift
+//  AddNewWorldClockViewController.swift
 //  ClockClone
 //
-//  Created by Logan Melton on 21/8/15.
+//  Created by Logan Melton on 21/8/21.
 //
 
 import UIKit
 
-class AlarmsViewController: UIViewController {
+class AddNewWorldClockViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

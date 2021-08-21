@@ -8,6 +8,5 @@
 import Foundation
 
 enum TimeZones {
-  case eastern, central, mountain, pacific
-  
+  case eastern
 }

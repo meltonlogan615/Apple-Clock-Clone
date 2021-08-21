@@ -18,7 +18,11 @@
 		5396F87326CA0A4D0074BB41 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F87226CA0A4D0074BB41 /* TimerViewController.swift */; };
 		5396F87626CA12D60074BB41 /* WorldClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F87526CA12D60074BB41 /* WorldClockModel.swift */; };
 		5396F87826CA13370074BB41 /* TimeZones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F87726CA13370074BB41 /* TimeZones.swift */; };
-		5396F87C26CB69E40074BB41 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F87B26CB69E40074BB41 /* TabBar.swift */; };
+		5396F87F26CCB0E50074BB41 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F87E26CCB0E50074BB41 /* StopWatch.swift */; };
+		5396F88126D16B8F0074BB41 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F88026D16B8F0074BB41 /* Alarm.swift */; };
+		5396F88326D170C80074BB41 /* CreateNewAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F88226D170C80074BB41 /* CreateNewAlarmViewController.swift */; };
+		5396F88526D171000074BB41 /* AddNewWorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F88426D171000074BB41 /* AddNewWorldClockViewController.swift */; };
+		5396F88926D171F10074BB41 /* GlobalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F88826D171F10074BB41 /* GlobalProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +37,13 @@
 		5396F86E26CA0A1D0074BB41 /* AlarmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsViewController.swift; sourceTree = "<group>"; };
 		5396F87026CA0A390074BB41 /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
 		5396F87226CA0A4D0074BB41 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
-		5396F87526CA12D60074BB41 /* WorldClockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorldClockModel.swift; path = ClockClone/WorldClockModel.swift; sourceTree = SOURCE_ROOT; };
+		5396F87526CA12D60074BB41 /* WorldClockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorldClockModel.swift; path = ClockClone/Models/WorldClockModel.swift; sourceTree = SOURCE_ROOT; };
 		5396F87726CA13370074BB41 /* TimeZones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZones.swift; sourceTree = "<group>"; };
-		5396F87B26CB69E40074BB41 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		5396F87E26CCB0E50074BB41 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		5396F88026D16B8F0074BB41 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		5396F88226D170C80074BB41 /* CreateNewAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewAlarmViewController.swift; sourceTree = "<group>"; };
+		5396F88426D171000074BB41 /* AddNewWorldClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewWorldClockViewController.swift; sourceTree = "<group>"; };
+		5396F88826D171F10074BB41 /* GlobalProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalProperties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +80,7 @@
 				5396F85C26CA094E0074BB41 /* SceneDelegate.swift */,
 				5396F87426CA0A580074BB41 /* VCs */,
 				5396F86026CA094E0074BB41 /* Main.storyboard */,
-				5396F87B26CB69E40074BB41 /* TabBar.swift */,
-				5396F87526CA12D60074BB41 /* WorldClockModel.swift */,
-				5396F87726CA13370074BB41 /* TimeZones.swift */,
+				5396F87D26CCB0C00074BB41 /* Models */,
 				5396F86326CA09560074BB41 /* Assets.xcassets */,
 				5396F86526CA09560074BB41 /* LaunchScreen.storyboard */,
 				5396F86826CA09560074BB41 /* Info.plist */,
@@ -85,12 +91,42 @@
 		5396F87426CA0A580074BB41 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
-				5396F86E26CA0A1D0074BB41 /* AlarmsViewController.swift */,
+				5396F88626D171130074BB41 /* Alarms */,
+				5396F88726D171270074BB41 /* WorldClock */,
 				5396F87226CA0A4D0074BB41 /* TimerViewController.swift */,
 				5396F87026CA0A390074BB41 /* StopWatchViewController.swift */,
-				5396F85E26CA094E0074BB41 /* WorldClockViewController.swift */,
 			);
 			path = VCs;
+			sourceTree = "<group>";
+		};
+		5396F87D26CCB0C00074BB41 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5396F87526CA12D60074BB41 /* WorldClockModel.swift */,
+				5396F87726CA13370074BB41 /* TimeZones.swift */,
+				5396F87E26CCB0E50074BB41 /* StopWatch.swift */,
+				5396F88026D16B8F0074BB41 /* Alarm.swift */,
+				5396F88826D171F10074BB41 /* GlobalProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5396F88626D171130074BB41 /* Alarms */ = {
+			isa = PBXGroup;
+			children = (
+				5396F86E26CA0A1D0074BB41 /* AlarmsViewController.swift */,
+				5396F88226D170C80074BB41 /* CreateNewAlarmViewController.swift */,
+			);
+			path = Alarms;
+			sourceTree = "<group>";
+		};
+		5396F88726D171270074BB41 /* WorldClock */ = {
+			isa = PBXGroup;
+			children = (
+				5396F88426D171000074BB41 /* AddNewWorldClockViewController.swift */,
+				5396F85E26CA094E0074BB41 /* WorldClockViewController.swift */,
+			);
+			path = WorldClock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,14 +200,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5396F87826CA13370074BB41 /* TimeZones.swift in Sources */,
+				5396F88326D170C80074BB41 /* CreateNewAlarmViewController.swift in Sources */,
 				5396F86F26CA0A1D0074BB41 /* AlarmsViewController.swift in Sources */,
 				5396F87626CA12D60074BB41 /* WorldClockModel.swift in Sources */,
 				5396F85F26CA094E0074BB41 /* WorldClockViewController.swift in Sources */,
 				5396F85B26CA094E0074BB41 /* AppDelegate.swift in Sources */,
 				5396F85D26CA094E0074BB41 /* SceneDelegate.swift in Sources */,
+				5396F87F26CCB0E50074BB41 /* StopWatch.swift in Sources */,
+				5396F88126D16B8F0074BB41 /* Alarm.swift in Sources */,
+				5396F88526D171000074BB41 /* AddNewWorldClockViewController.swift in Sources */,
 				5396F87326CA0A4D0074BB41 /* TimerViewController.swift in Sources */,
 				5396F87126CA0A390074BB41 /* StopWatchViewController.swift in Sources */,
-				5396F87C26CB69E40074BB41 /* TabBar.swift in Sources */,
+				5396F88926D171F10074BB41 /* GlobalProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.meltonlogan.ClockClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -347,7 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.meltonlogan.ClockClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

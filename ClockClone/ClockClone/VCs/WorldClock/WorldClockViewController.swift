@@ -52,7 +52,7 @@ class WorldClockViewController: UICollectionViewController {
   
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WorldClockCell", for: indexPath)
-    cell.frame = CGRect(x: 10, y: 0, width: view.frame.width - 20, height: 70)
+    cell.frame = CGRect(x: 10, y: 0, width: view.frame.width - 20, height: 80)
     cell.backgroundColor = .cyan
     cell.contentMode = .bottomLeft
     return cell

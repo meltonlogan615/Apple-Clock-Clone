@@ -4,7 +4,8 @@
 //
 //  Created by Logan Melton on 21/8/15.
 //
-
+import Contacts
+import ContactsUI
 import UIKit
 
 class WorldClockViewController: UICollectionViewController {
@@ -29,16 +30,8 @@ class WorldClockViewController: UICollectionViewController {
   
 
   //MARK: - NavBar Actions
-  // TODO: Displays list of cities in either a UICollectionView or UITableView
-  /*
-   - Search bar to filter at the top.
-   - Alphabetical Listing.
-   - When selected, can attach a contact to it as it's main label. Additional Details for the City, Hrs +/- Users timeZone.
-   - On right side, the current time of the selected city.
-   */
   @objc func createNewWorldClock() {
     print("poop")
-    worldClocks.removeAll()
   }
   
   @objc func editWorldClocks() {
